@@ -132,6 +132,9 @@
 #define DECODE_TROTEC        false  // Not implemented.
 #define SEND_TROTEC          true
 
+#define DECODE_STARTRACK     true
+#define SEND_STARTRACK       true
+
 /*
  * Always add to the end of the list and should never remove entries
  * or change order. Projects may save the type number for later usage
@@ -167,7 +170,8 @@ enum decode_type_t {
   PRONTO,
   NEC_LIKE,
   ARGO,
-  TROTEC
+  TROTEC,
+  STARTRACK
 };
 
 // Message lengths & required repeat values
@@ -222,6 +226,7 @@ enum decode_type_t {
 #define TROTEC_COMMAND_LENGTH        9U
 #define WHYNTER_BITS                32U
 #define ARGO_COMMAND_LENGTH         12U
+#define STARTRACK_BITS              24U
 
 // Turn on Debugging information by uncommenting the following line.
 // #define DEBUG 1
